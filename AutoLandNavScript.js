@@ -83,6 +83,18 @@ function calculate() {
       } else if (difX > 0 && difY < 0) {
         // 4th Quadrant
         angle = 90 + Math.atan(Math.abs(difY) / difX) * rad2deg;
+      } else if (difX == 0 && difY > 0) {
+        // Straight up
+        angle = 0;
+      } else if (difX == 0 && difY < 0) {
+        // Straight down
+        angle = 180;
+      } else if (difX > 0 && difY == 0) {
+        // Straight right
+        angle = 90;
+      } else if (difX < 0 && difY == 0) {
+        // Straight left
+        angle = 270;
       } else {
         // Unknown error
         alert("Unknown Error");
