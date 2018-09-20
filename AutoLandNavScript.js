@@ -107,7 +107,7 @@ function calculate() {
       azimuth = azimuth.toFixed(1);
 }
 
-
+      distance = distance.toFixed(1);
    
    	
 
